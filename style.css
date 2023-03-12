@@ -25,7 +25,6 @@ p {
 }
 
 .sections {
-  height: 100vh;
   margin: 0;
 }
 
@@ -162,14 +161,10 @@ p {
     height: 70vh;
   }
 
-  .section02 {
-    height: 40vh;
-  }
-
   .arrow-div {
     width: 70px;
     position: absolute;
-    bottom: -156px;
+    bottom: -335px;
   }
 }
 
