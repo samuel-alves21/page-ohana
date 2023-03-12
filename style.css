@@ -142,19 +142,27 @@ p {
   .white-square {
     justify-content: center;
     height: 120%;
-    position: initial;
-    margin: -10% 0;
+    position: relative;
+    top: -30px;
     flex-direction: column;
     align-items: center;
   }
 
+  .buttons {
+    gap: 15px;
+  }
+
   .buttons > button {
-    height: 120px;
+    height: 65px;
+    max-width: 400px;
+    width: 70%;
+    align-self: center;
   }
 
   .buttons h2 {
     align-self: center;
     position: initial;
+    margin-bottom: 20px;
   }
 
   .sections {
@@ -164,7 +172,7 @@ p {
   .arrow-div {
     width: 70px;
     position: absolute;
-    bottom: -335px;
+    bottom: -25px;
   }
 }
 
