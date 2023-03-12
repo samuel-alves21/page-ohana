@@ -1,0 +1,201 @@
+/* ----------------- Configs ------------------- */
+
+:root {
+  --color-primary: #ac4d47;
+  --color-secundary: #f1aea7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2,
+p {
+  color: var(--color-primary);
+}
+
+h2 {
+  font-family: 'kingred';
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sections {
+  height: 100vh;
+  margin: 0;
+}
+
+/* ----------------- Geral ------------------- */
+
+.section01 {
+  background: url('img/section01-background.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.section02 {
+  background: var(--color-secundary);
+  border-top: 2px solid white;
+}
+
+.white-square {
+  background-color: white;
+  height: 50%;
+  border-radius: 10px;
+  position: relative;
+  top: 23.5%;
+}
+
+.ohana-container {
+  position: absolute;
+  bottom: 0;
+  max-width: none;
+  width: 100%;
+}
+
+.buttons-row,
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons-row {
+  margin-left: auto;
+}
+
+.buttons {
+  padding: 5px 0;
+  gap: 20px;
+  position: relative;
+}
+
+.buttons > button {
+  background: linear-gradient(
+    95.86deg,
+    #ab6152 0.45%,
+    #f1aea7 49.56%,
+    #ab6152 98.68%
+  );
+  border-radius: 20px;
+  height: 160px;
+  transition: transform 0.4s;
+}
+
+.buttons > button:hover {
+  transform: scale(1.05);
+}
+
+.buttons h2 {
+  align-self: center;
+  position: absolute;
+  top: -50%;
+}
+
+.arrow-div {
+  width: 70px;
+  position: absolute;
+  bottom: -35px;
+  right: calc(50% - 35px);
+}
+
+.section03 {
+  background: url('img/section03-background.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.section03 p {
+  max-width: 700px;
+  font-weight: 500;
+}
+
+/* ----------------- Media Queries ------------------- */
+
+@media screen and (max-width: 768px) {
+  .section01 {
+    background: url('img/section01-background-mobile.jpg') no-repeat center;
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .section03 {
+    background: url('img/section03-background-mobile.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .section03 div {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+
+  .ohana-container {
+    display: none;
+  }
+
+  .buttons-row {
+    margin-left: 0;
+  }
+
+  .white-square {
+    justify-content: center;
+    height: 120%;
+    position: initial;
+    margin: -10% 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons > button {
+    height: 120px;
+  }
+
+  .buttons h2 {
+    align-self: center;
+    position: initial;
+  }
+
+  .sections {
+    height: 70vh;
+  }
+
+  .section02 {
+    height: 40vh;
+  }
+
+  .arrow-div {
+    width: 70px;
+    position: absolute;
+    bottom: -156px;
+  }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .ohana-container {
+    width: 40%;
+  }
+
+  .buttons > button {
+    height: 60px;
+  }
+}
+
+/* ----------------- animations ------------------- */
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
+  }
+}
+
+.slide-top {
+  -webkit-animation: slide-top 1s ease-in-out infinite alternate-reverse both;
+  animation: slide-top 1s ease-in-out infinite alternate-reverse both;
+}
