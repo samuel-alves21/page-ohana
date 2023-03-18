@@ -116,13 +116,13 @@ p {
 
 @media screen and (max-width: 768px) {
   .section01 {
-    background: url('img/section01-background-mobile.jpg') no-repeat center;
+    background: url('img/section01-background-mobile.jpg') no-repeat top;
     background-size: cover;
     justify-content: center;
   }
 
   .section03 {
-    background: url('img/section03-background-mobile.jpg') no-repeat center;
+    background: url('img/section03-background-mobile.jpg') no-repeat top;
     background-size: cover;
   }
 
